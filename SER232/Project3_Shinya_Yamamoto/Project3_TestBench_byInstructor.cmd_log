@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_byInstructor.xst" -ofn "C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_byInstructor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Project3_TestBench_byInstructor.ngc Project3_TestBench_byInstructor.ngd  
+xst -intstyle ise -ifn "C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_byInstructor.xst" -ofn "C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_byInstructor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Project3_TestBench_byInstructor.ngc Project3_TestBench_byInstructor.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Project3_TestBench_byInstructor.ngc Project3_TestBench_byInstructor.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Project3_TestBench_byInstructor.ngc Project3_TestBench_byInstructor.ngd  
+xst -intstyle ise -ifn "C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_byInstructor.xst" -ofn "C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_byInstructor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Project3_TestBench_byInstructor.ngc Project3_TestBench_byInstructor.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Project3_TestBench_byInstructor.ngc Project3_TestBench_byInstructor.ngd  
+xst -intstyle ise -ifn "C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_byInstructor.xst" -ofn "C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_byInstructor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Project3_TestBench_byInstructor.ngc Project3_TestBench_byInstructor.ngd  
+xst -intstyle ise -ifn "C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_byInstructor.xst" -ofn "C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_byInstructor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Project3_TestBench_byInstructor.ngc Project3_TestBench_byInstructor.ngd  
+xst -intstyle ise -ifn "C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_byInstructor.xst" -ofn "C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_byInstructor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Project3_TestBench_byInstructor.ngc Project3_TestBench_byInstructor.ngd  
+xst -intstyle ise -ifn "C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_byInstructor.xst" -ofn "C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_byInstructor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Project3_TestBench_byInstructor.ngc Project3_TestBench_byInstructor.ngd  
+xst -intstyle ise -ifn "C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_byInstructor.xst" -ofn "C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_byInstructor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Project3_TestBench_byInstructor.ngc Project3_TestBench_byInstructor.ngd  
