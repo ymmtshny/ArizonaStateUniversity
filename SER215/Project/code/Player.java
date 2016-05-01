@@ -89,14 +89,21 @@ public class Player {
 		}
 	}
 	
-	public void removeCardsFromOnePlayerAndAddCardsToAnotherPlayer(Player OnePlayer, Player AnotherPlayer, int number) {
+	public void takeAndRemoveCardsFromPlayer(Player AnotherPlayer, int number) {
 		//if the player has the number, delete the number from cards array
-		for(int i:OnePlayer.cards) {
-			if(i == number) {
-				OnePlayer.cards.remove(i);
-				AnotherPlayer.cards.add(i);
+		
+		int idx = 0;
+		int currentSize = AnotherPlayer.cards.size();
+		do{
+			if(AnotherPlayer.cards.get(idx) == number) {
+				AnotherPlayer.cards.remove(idx);
+				cards.add(number);
+				currentSize--;
 			}
-		}
+		
+			idx ++;
+		}while(idx < currentSize);
+		
 	}
 	
 	public void getInitialCards(Deck cards) {

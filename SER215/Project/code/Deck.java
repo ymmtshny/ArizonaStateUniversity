@@ -49,12 +49,12 @@ public class Deck {
 		//deck.printoutNumberOfCards();
 		
 		Player player1 = new Player();
-		//player1.getInitialCards(deck);
+		player1.getInitialCards(deck);
 		//deck.printoutNumberOfCards();
 		
-		for(int i = deck.cards.size(); i > 0 ; i --){
-			player1.drawCard(deck);
-		}
+//		for(int i = deck.cards.size(); i > 0 ; i --){
+//			player1.drawCard(deck);
+//		}
 		
 		//deck.printoutNumberOfCards();
 		
@@ -62,11 +62,11 @@ public class Deck {
 		player1.printoutNumberOfCards();
 		
 		
-		for(int i = 1; i <= 13; i ++) {
-			player1.removeGroupFromHands(i);
-		}
+//		for(int i = 1; i <= 13; i ++) {
+//			player1.removeGroupFromHands(i);
+//		}
 		
-		player1.printoutNumberOfCards();
+//		player1.printoutNumberOfCards();
 		
 //		for(int i = 1; i <= 13; i ++) {
 //			if(player1.checkGroup(i)) {
@@ -81,11 +81,17 @@ public class Deck {
 		
 		
 //		System.out.println();
-//		Player player2 = new Player();
-//		player2.getInitialCards(deck);
-//		player2.printoutCards();
+		Player player2 = new Player();
+		player2.getInitialCards(deck);
+		player2.printoutCards();
 		
+		Scanner sc = new Scanner(System.in);
+		int i = sc.nextInt();
 		
+		player1.takeAndRemoveCardsFromPlayer(player2, i);
+		
+		player1.printoutCards();
+		player2.printoutCards();
 		
 	}
 	
