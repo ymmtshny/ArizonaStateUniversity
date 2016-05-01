@@ -10,10 +10,16 @@ public class User extends Player{
 	 ***********************************************************/
 	public int getUsersInput() {
 		
-		printoutCards();
-		System.out.print("User's turn. Pick up a number ");
-		Scanner scanner = new Scanner(System.in);
-		int inputNumber = scanner.nextInt();
+		int inputNumber = 0;
+		do {
+			printoutCards();
+			System.out.print("User's turn. Pick up a number ");
+			Scanner scanner = new Scanner(System.in);
+			inputNumber = scanner.nextInt();
+			if(inputNumber < 1 || inputNumber > 13) {
+				System.out.print("[ERROR] Enter a number from 1 to 13");
+			}
+		} while(inputNumber < 1 || inputNumber > 13);
 		
 		return inputNumber;
 				
