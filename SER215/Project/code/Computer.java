@@ -10,12 +10,12 @@ public class Computer extends Player{
 	 ***********************************************************/
 	public int getComputersInput() {
 		
-		printoutCards();
+		//printoutCards(); for debug
 		int MIN = 1;
 		int MAX = 13;
 		int randomNumber = ThreadLocalRandom.current().nextInt(MIN, MAX);
 		
-		System.out.print("Computer's turn. Computer pick up " + randomNumber);
+		System.out.println("Computer's turn. Computer asks for " + randomNumber);
 		return randomNumber;
 				
 	}

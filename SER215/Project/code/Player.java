@@ -5,7 +5,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Player {
 	
 	public List<Integer> cards = new ArrayList<Integer>();
-	private int point = 0; 
+	public int point = 0; 
 	
 	/**
 	 * constructor 
@@ -14,6 +14,26 @@ public class Player {
 		//Intentionally empty here
 	}
 	
+	/**
+	 * public void checkIfHasGroupYesRemoveAndAddPoint() {
+	 * ---------------------------------------------------------
+	 * This function checks if the player has 4 same cards. If
+	 * the player has 4 same cards, this function calls
+	 * removeGroupFromHands() and getPoint() function.
+	 * @param the number that you want to check 
+	 ***********************************************************/
+	public void checkIfHasGroupYesRemoveAndAddPoint() {
+
+		boolean hasGroup = false;
+		
+		for(int i = 1; i <= 13; i ++  ){
+			hasGroup = checkGroup(i);
+			if(hasGroup) {
+				removeGroupFromHands(i);
+				addPoint();
+			} 
+		}
+	}
 	
 	/**
 	 * public boolean checkGroup(int number)
@@ -26,7 +46,7 @@ public class Player {
 	public boolean checkGroup(int number) {
 		boolean has4Numbers = false;
 		int count = 0;
-		for(int i:cards) {
+		for(int i = 0; i < cards.size(); i ++) {
 			if(cards.get(i) == number) {
 				count ++;
 			}
@@ -47,7 +67,6 @@ public class Player {
 	 ***********************************************************/
 	public void removeGroupFromHands(int number) {
 		
-		int initalSize = cards.size();
 		int currentSize = cards.size();
 		int idx = 0;
         do {
@@ -103,7 +122,7 @@ public class Player {
 		//check if the other has 'number' card.
 		boolean hasCard = false;
 		
-		for(int i:player.cards)  {
+		for(int i= 0; i < player.cards.size(); i++)  {
 			if(player.cards.get(i) == number) {
 				hasCard = true;
 			}
@@ -127,10 +146,11 @@ public class Player {
 			int randomCard = deck.cards.get(randomIdx);
 			deck.cards.remove(randomIdx);
 			cards.add(randomCard);
-		} else {
-			System.out.print("Game Over");
-			System.exit(0);
 		}
+//		} else {
+//			System.out.print("Game Over");
+//			System.exit(0);
+//		}
 	}
 	
 	/**
@@ -146,15 +166,21 @@ public class Player {
 		
 		int idx = 0;
 		int currentSize = AnotherPlayer.cards.size();
-		do{
-			if(AnotherPlayer.cards.get(idx) == number) {
-				AnotherPlayer.cards.remove(idx);
-				cards.add(number);
-				currentSize--;
-			}
 		
-			idx ++;
-		}while(idx < currentSize);
+		if(AnotherPlayer.cards.size() != 0) {
+			
+			do{
+				if(AnotherPlayer.cards.get(idx) == number) {
+					AnotherPlayer.cards.remove(idx);
+					cards.add(number);
+					currentSize--;
+					idx --;
+				}
+			
+				idx ++;
+			}while(idx < currentSize);
+		
+		}
 		
 	}
 	
@@ -179,7 +205,7 @@ public class Player {
 	 * This function may be used to debug.
 	 ***********************************************************/
 	public void printoutCards() {
-		System.out.println("printoutCards");
+		System.out.println("Cards");
 		for(int i :cards) {
 			System.out.print(i+ " ");
 		}
