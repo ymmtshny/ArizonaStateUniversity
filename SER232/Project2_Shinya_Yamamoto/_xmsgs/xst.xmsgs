@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project2_Shinya_Yamamoto\Project2_TestBench_byInstructor.v" Line 37: Port <arg fmt="%s" index="1">resultOfAddition</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project2_Shinya_Yamamoto\Project2_TestBench_byInstructor.v" Line 57: Using initial value of <arg fmt="%s" index="1">A</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project2_Shinya_Yamamoto\AddOrSubtractThenSelectAndDecodedInto7SegmentsDisplay.v" Line 41: Signal &lt;<arg fmt="%s" index="1">S</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1773" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project2_Shinya_Yamamoto\AddOrSubtractThenSelectAndDecodedInto7SegmentsDisplay.v" Line 42: Procedural &apos;assign&apos; is not a supported statement for synthesis
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project2_Shinya_Yamamoto\AddOrSubtractThenSelectAndDecodedInto7SegmentsDisplay.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">AddOrSubtractThenSelectAndDecodedInto7SegmentsDisplay</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project2_Shinya_Yamamoto\Project2_TestBench_byInstructor.v" Line 50: Signal &lt;<arg fmt="%s" index="1">numberOfCorrectTestCases</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project2_Shinya_Yamamoto\Project2_TestBench_byInstructor.v" Line 53: Signal &lt;<arg fmt="%s" index="1">numberOfIncorrectTestCases</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+</messages>
+

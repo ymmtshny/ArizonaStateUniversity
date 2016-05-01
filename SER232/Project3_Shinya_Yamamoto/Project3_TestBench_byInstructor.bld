@@ -1,0 +1,45 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3
+Project3_TestBench_byInstructor.ngc Project3_TestBench_byInstructor.ngd
+
+Reading NGO file
+"C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_Tes
+tBench_byInstructor.ngc" ...
+Loading design module
+"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto/Project3_Tes
+tBench_byInstructor.ngc"...
+WARNING:NgdBuild:578 - Design contains no instances.
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+ERROR:NgdBuild:605 - logical root block 'Project3_TestBench_byInstructor' with
+   type 'Project3_TestBench_byInstructor' is unexpanded. Symbol
+   'Project3_TestBench_byInstructor' is not supported in target 'artix7'.
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     1
+  Number of warnings:   1
+
+Total memory usage is 252824 kilobytes
+
+Total REAL time to NGDBUILD completion:  8 sec
+Total CPU time to NGDBUILD completion:   8 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "Project3_TestBench_byInstructor.bld"...

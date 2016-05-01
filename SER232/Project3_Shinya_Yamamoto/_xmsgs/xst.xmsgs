@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\Proejct3_TestBench_byInstructor.v" Line 63: Using initial value of <arg fmt="%s" index="1">opCode</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\calculator.v" Line 33: Using initial value of <arg fmt="%s" index="1">min</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\calculator.v" Line 34: Using initial value of <arg fmt="%s" index="1">max</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\calculator.v" Line 41: Signal &lt;<arg fmt="%s" index="1">max</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\calculator.v" Line 43: Signal &lt;<arg fmt="%s" index="1">min</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\calculator.v" Line 52: Signal &lt;<arg fmt="%s" index="1">max</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\calculator.v" Line 54: Signal &lt;<arg fmt="%s" index="1">min</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\calculator.v" Line 62: Result of <arg fmt="%d" index="1">20</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\calculator.v" Line 63: Signal &lt;<arg fmt="%s" index="1">max</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\calculator.v" Line 65: Signal &lt;<arg fmt="%s" index="1">min</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\calculator.v" Line 75: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\calculator.v" Line 106: Signal &lt;<arg fmt="%s" index="1">max</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\calculator.v" Line 115: Signal &lt;<arg fmt="%s" index="1">min</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\Proejct3_TestBench_byInstructor.v" Line 53: Signal &lt;<arg fmt="%s" index="1">result</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\Proejct3_TestBench_byInstructor.v" Line 54: Signal &lt;<arg fmt="%s" index="1">numberOfCorrectTestCases</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\Proejct3_TestBench_byInstructor.v" Line 58: Signal &lt;<arg fmt="%s" index="1">result</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\Proejct3_TestBench_byInstructor.v" Line 59: Signal &lt;<arg fmt="%s" index="1">result</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\Proejct3_TestBench_byInstructor.v" Line 60: Signal &lt;<arg fmt="%s" index="1">numberOfIncorrectTestCases</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\Proejct3_TestBench_byInstructor.v</arg>&quot; line <arg fmt="%d" index="2">42</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">uut</arg>&gt; of block &lt;<arg fmt="%s" index="4">calculator</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Project3_TestBench_byInstructor</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\Proejct3_TestBench_byInstructor.v</arg>&quot; line <arg fmt="%s" index="2">42</arg>: Output port &lt;<arg fmt="%s" index="3">result</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\Proejct3_TestBench_byInstructor.v</arg>&quot; line <arg fmt="%s" index="2">42</arg>: Output port &lt;<arg fmt="%s" index="3">overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uut</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+</messages>
+

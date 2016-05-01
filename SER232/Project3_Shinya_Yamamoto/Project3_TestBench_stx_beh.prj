@@ -1,0 +1,3 @@
+verilog isim_temp "calculator.v"
+verilog isim_temp "Project3_TestBench.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

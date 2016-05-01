@@ -1,0 +1,37 @@
+ISim log file
+Running: C:\Xilinx\14.7\ISE_DS\ISE\Shinya_Yamamoto\Project3_Shinya_Yamamoto\Project3_TestBench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Xilinx/14.7/ISE_DS/ISE/Shinya_Yamamoto/Project3_Shinya_Yamamoto/Project3_TestBench_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 145000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+opCode( 4), in1( 4095), in2( 2755), result( 2755), overflow(0)
+opCode( 6), in1( 1365), in2( 2730), result( 4095), overflow(0)
+opCode( 5), in1( 3855), in2( 2730), result( 1445), overflow(0)
+opCode( 7), in1(43690), in2(    0), result(21845), overflow(0)
+opCode( 8), in1(32752), in2(    0), result(32753), overflow(0)
+opCode( 8), in1(32767), in2(    0), result(32768), overflow(1)
+opCode( 9), in1(    0), in2(    0), result(65535), overflow(0)
+opCode( 9), in1(32768), in2(    0), result(32767), overflow(1)
+opCode( 2), in1(    1), in2(    0), result(    5), overflow(0)
+opCode( 2), in1(  240), in2(    0), result( 1200), overflow(0)
+opCode( 2), in1(32768), in2(    0), result(32768), overflow(1)
+opCode( 2), in1(32767), in2(    0), result(32763), overflow(1)
+opCode( 0), in1(32767), in2(    2), result(32769), overflow(1)
+opCode( 0), in1(45877), in2(45877), result(26218), overflow(1)
+opCode( 0), in1(13106), in2(   64), result(13170), overflow(0)
+opCode( 0), in1(13106), in2(45877), result(58983), overflow(0)
+opCode( 0), in1(    0), in2(13106), result(13106), overflow(0)
+opCode( 0), in1(61441), in2(61441), result(57346), overflow(0)
+opCode( 1), in1(32527), in2(45877), result(52186), overflow(1)
+opCode( 1), in1(45877), in2(32527), result(13350), overflow(1)
+opCode( 1), in1(32527), in2(32527), result(    0), overflow(0)
+opCode( 1), in1(    1), in2(45877), result(19660), overflow(0)
+opCode( 1), in1(45877), in2(    1), result(45876), overflow(0)
+opCode( 1), in1(45877), in2(45877), result(    0), overflow(0)
