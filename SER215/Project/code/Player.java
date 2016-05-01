@@ -5,13 +5,24 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Player {
 	
 	public List<Integer> cards = new ArrayList<Integer>();
-	public int point = 0; //the number of groups
+	private int point = 0; 
 	
-	//constructor
+	/**
+	 * constructor 
+	 ***********************************/
 	public Player() {
-		
+		//Intentionally empty here
 	}
 	
+	
+	/**
+	 * public boolean checkGroup(int number)
+	 * ---------------------------------------------------------
+	 * This function checks if the player has 4 same cards. If
+	 * the player has 4 same cards, this function returns true.
+	 * If not, it returns false.  
+	 * @param the number that you want to check 
+	 ***********************************************************/
 	public boolean checkGroup(int number) {
 		boolean has4Numbers = false;
 		int count = 0;
@@ -28,6 +39,12 @@ public class Player {
 		return has4Numbers;
 	}
 	
+	/**
+	 * public void removeGroupFromHands(int number)
+	 * ---------------------------------------------------------
+	 * This function removes number from player's cards List.
+	 * @param the number that you want to remove 
+	 ***********************************************************/
 	public void removeGroupFromHands(int number) {
 		
 		int initalSize = cards.size();
@@ -44,22 +61,44 @@ public class Player {
             
         }while (idx < currentSize);
 		
-//		for(int i = 0; i < card.size(); i++) {
-//			//if(cards.get(i) == number) {
-//				cards.remove(i);
-//			//}
-//		}
 	}
 	
+	/**
+	 * public int getPoint() 
+	 * ---------------------------------------------------------
+	 * This is a getter method and just retuns point of the player
+	 ***********************************************************/
 	public int getPoint() {
 		return point;
 	}
 	
+	/**
+	 * public void addPoint()  
+	 * ---------------------------------------------------------
+	 * This function adds 1 point to the current point.
+	 ***********************************************************/
 	public void addPoint() {
 		point = point + 1;
 	}
 	
-	//上書きする。
+	/**
+	 * public void addPoints(int number)  
+	 * ---------------------------------------------------------
+	 * This function adds some points to the current point.
+	 * @param points that you want ot add.
+	 ***********************************************************/
+	public void addPoints(int number) {
+		point = point + number;
+	}
+	
+	/**
+	 * public boolean askForCard(Player player, int number)  
+	 * ---------------------------------------------------------
+	 * This function checks if a player has some number and 
+	 * returns true or false.
+	 * @param player that you want to check
+	 * @param number that you want to check
+	 ***********************************************************/
 	public boolean askForCard(Player player, int number) {
 		//check if the other has 'number' card.
 		boolean hasCard = false;
@@ -70,10 +109,15 @@ public class Player {
 			}
 		}
 
-		return hasCard;
-		
+		return hasCard;	
 	}
 	
+	/**
+	 * public void drawCard(Deck deck)   
+	 * ---------------------------------------------------------
+	 * This function gets one random card number from deck
+	 * @param deck
+	 ***********************************************************/
 	public void drawCard(Deck deck) {
 
 		if(deck.cards.size() > 0) {
@@ -89,6 +133,14 @@ public class Player {
 		}
 	}
 	
+	/**
+	 * public void takeAndRemoveCardsFromPlayer(Player AnotherPlayer, int number)  
+	 * ---------------------------------------------------------
+	 * This function removes some cards from the user and adds
+	 * them to the players cards. 
+	 * @param the player who you want to remove cards from.
+	 * @param the card that you want to get
+	 ***********************************************************/
 	public void takeAndRemoveCardsFromPlayer(Player AnotherPlayer, int number) {
 		//if the player has the number, delete the number from cards array
 		
@@ -106,6 +158,12 @@ public class Player {
 		
 	}
 	
+	/**
+	 * public void getInitialCards(Deck cards)   
+	 * ---------------------------------------------------------
+	 * This function let the player have initial cards
+	 * @param Deck
+	 ***********************************************************/
 	public void getInitialCards(Deck cards) {
 		
 		for(int i = 0; i < 8; i ++) {
@@ -114,6 +172,12 @@ public class Player {
 		
 	}
 	
+	/**
+	 * public void printoutCards()    
+	 * ---------------------------------------------------------
+	 * This function prints out all cards that the player has.
+	 * This function may be used to debug.
+	 ***********************************************************/
 	public void printoutCards() {
 		System.out.println("printoutCards");
 		for(int i :cards) {
@@ -122,6 +186,12 @@ public class Player {
 		System.out.println();
 	}
 	
+	/**
+	 * public void printoutNumberOfCards()     
+	 * ---------------------------------------------------------
+	 * This function prints out the number of cards that
+	 * the player has. This function may be used to debug.
+	 ***********************************************************/
 	public void printoutNumberOfCards() {
 		System.out.println("\ncards.size() "+ cards.size() );
 	}
