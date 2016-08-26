@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+/Users/shinyayamamoto/ArizonaStateUniversity/SER222/.metadata/.plugins/org.eclipse.jdt.core
+1206888066.index

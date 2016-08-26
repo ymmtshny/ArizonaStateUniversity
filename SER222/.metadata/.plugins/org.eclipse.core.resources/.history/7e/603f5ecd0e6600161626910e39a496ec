@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Postfix {
+	
+	public static void main (String[] args) {
+		
+		String expression, again;
+		int result;
+	
+		try {
+			
+			do {
+				Scanner in = new Scanner(System.in);
+				System.out.println("Enter a valid postfix expression:");
+				expression = in.nextLine();
+				
+				again = "y";
+			} while(again.equalsIgnoreCase("y"));
+			
+			
+		} catch(Exception IOException) {
+			System.out.println("Input exception reported");
+		}
+		
+	
+	}
+
+}
