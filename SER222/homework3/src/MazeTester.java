@@ -24,12 +24,13 @@ public class MazeTester
 
 		System.out.print("Enter the starting position (two integers separated by a comma):");
 		String startPointString = scan.nextLine();
-
+		int[] startPoint = getIntArrayFromCommaSeparatedString(startPointString);
+		
 		System.out.print("Enter the end position (two integers separated by a comma):");
 		String endPointString = scan.nextLine();
-
-		int[] startPoint = getIntArrayFromCommaSeparatedString(startPointString);
 		int[] endPoint = getIntArrayFromCommaSeparatedString(endPointString);
+		
+		
 		System.out.println("Start Point is x:" + startPoint[0] + " y:" + startPoint[1]);
 		System.out.println("End Point is x:" + endPoint[0] + " y:" + endPoint[1]);
 		
@@ -54,6 +55,12 @@ public class MazeTester
 		for(int i = 0; i < strArray.length; i++) {
 			intArray[i] = Integer.parseInt(strArray[i]);
 		}
+		
+		if(intArray.length != 2) {
+			System.out.println("Invalid Input");
+			System.exit(0);
+		}
+		
 		return intArray;
 	}
 }

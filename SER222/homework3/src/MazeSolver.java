@@ -24,16 +24,36 @@ public class MazeSolver
 		this.maze = maze;
 	}
 
+	/**
+	 * This function sets a starting position of solving maze.
+	 * @param x represents x coordinate
+	 * @param y represents y coordinate
+	 */
 	public void setStartPoint(int x, int y) {
-		//TODO: invalid point
+		
+		if(x > this.maze.getColumns() || y > this.maze.getRows()) {
+			System.out.println("Invalid Input");
+			System.exit(0);
+		}
+		
 		Position pos = new Position();
 		pos.setx(x);
 		pos.sety(y);
 		this.startPoint = pos;
 	}
 
+	/**
+	 * This function sets the ending position of solving maze.
+	 * @param x represents x coordinate
+	 * @param y represents y coordinate
+	 */
 	public void setEndPoint(int x, int y) {
-		//TOD0: invalid point
+		
+		if(x > this.maze.getColumns() || y > this.maze.getRows()) {
+			System.out.println("Invalid Input");
+			System.exit(0);
+		}
+
 		Position pos = new Position();
 		pos.setx(x);
 		pos.sety(y);

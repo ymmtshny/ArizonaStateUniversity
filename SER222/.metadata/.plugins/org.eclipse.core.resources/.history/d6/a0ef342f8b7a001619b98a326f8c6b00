@@ -1,0 +1,176 @@
+package homework8;
+
+/**
+ * Implements various sorting algorithms.
+ * 
+ * @author (your name), Acuna, Sedgewick
+ * @verison (version)
+ */
+
+public class BaseSorting {
+     
+    /**
+     * Entry point for sample output.
+     * 
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        //Q1
+        String[] a = {"S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"};
+        quicksortmid(a);
+        assert isSorted(a); //requires assertions enabled.
+        show(a);
+        
+        //Q2
+        String[] b = {"S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"};
+        mergesort(b);
+        assert isSorted(b);
+        show(b);
+    }
+    
+    public static void quicksortmid(Comparable[] a) {
+        //TODO: implement this.
+    	quickSort(a);
+    }
+    
+    public static <T extends Comparable<T>> 
+	void quickSort(T[] data)
+    {
+    	quickSort(data, 0, data.length - 1);
+    }
+    
+    /**
+	 * Recursively sorts a range of objects in the specified array using the
+	 * quick sort algorithm. 
+	 * 
+	 * @param data the array to be sorted
+	 * @param min  the minimum index in the range to be sorted
+	 * @param max  the maximum index in the range to be sorted
+	 */
+	private static <T extends Comparable<T>> 
+		void quickSort(T[] data, int min, int max)
+	{
+		if (min < max)
+		{
+			// create partitions
+			int indexofpartition = partition(data, min, max);
+			
+			// sort the left partition (lower values)
+			quickSort(data, min, indexofpartition - 1);
+			
+			// sort the right partition (higher values)
+			quickSort(data, indexofpartition + 1, max);
+		}
+	}
+	
+	/**
+	 * Used by the quick sort algorithm to find the partition.
+	 * 
+	 * @param data the array to be sorted
+	 * @param min  the minimum index in the range to be sorted
+	 * @param max  the maximum index in the range to be sorted
+	 */
+	private static <T extends Comparable<T>> 
+		int partition(T[] data, int min, int max)
+	{
+		
+		//the algorithm could check the first, middle, and last elements in the list 
+		//and choose the middle value as the partition element.
+		T partitionelement;
+		int left, right;
+		int middle = (min + max) / 2;
+		
+		T leftElement   = data[min];
+		T middleElemnet = data[middle];
+		T rightElement  = data[max];
+		if (leftElement.compareTo(middleElemnet) <= 0 && middleElemnet.compareTo(rightElement) <= 0) {
+			partitionelement = middleElemnet;
+		} else if(rightElement.compareTo(middleElemnet) <= 0 && middleElemnet.compareTo(leftElement) <= 0) {
+			partitionelement = middleElemnet;
+		} else if (middleElemnet.compareTo(leftElement) <= 0 && leftElement.compareTo(rightElement) <= 0) {
+			partitionelement = leftElement;
+		} else if (rightElement.compareTo(leftElement) <= 0 && leftElement.compareTo(middleElemnet) <= 0) {
+			partitionelement = leftElement;
+		} else if (leftElement.compareTo(rightElement) <= 0 && rightElement.compareTo(rightElement) <= 0) { 
+			partitionelement = rightElement;
+		} else if (rightElement.compareTo(rightElement) <= 0 && rightElement.compareTo(leftElement) <= 0) {
+			partitionelement = rightElement;
+		} else  {
+			assert(true);
+		}
+		
+		
+		// use the middle data value as the partition element
+		partitionelement = data[middle];
+		// move it out of the way for now
+		swap(data, middle, min);
+		
+		left = min;
+		right = max;
+		
+		while (left < right)
+		{
+			// search for an element that is > the partition element
+			while (left < right && data[left].compareTo(partitionelement) <= 0)
+				left++;
+			
+			// search for an element that is < the partition element
+			while (data[right].compareTo(partitionelement) > 0)
+				right--;
+			
+			// swap the elements
+			if (left < right)
+				swap(data, left, right);
+		}
+		
+		// move the partition element into place
+		swap(data, min, right);
+		
+		return right;
+	}
+	
+	private static <T extends Comparable<T>> 
+	void swap(T[] data, int index1, int index2)
+	{
+		T temp = data[index1];
+		data[index1] = data[index2];
+		data[index2] = temp;
+	}
+    
+    public static void mergesort(Comparable[] a) {
+        //TODO: implement this.
+    	Sorting.mergeSort(a);
+    }
+    
+    
+    /**
+     * Displays contents of array, space separated.
+     * @author Sedgewick
+     * @param a Array to display.
+     */
+    private static void show(Comparable[] a) {
+        for (Comparable a1 : a)
+            System.out.print(a1 + " ");
+
+        System.out.println();
+    }
+    
+    /**
+     * Checks if array is in sorted order.
+     * @author Sedgewick
+     * @param a Array to be checked.
+     * @return Returns true if array is sorted.
+     */
+    public static boolean isSorted(Comparable[] a) {
+        for (int i = 1; i < a.length; i++)
+            if (less(a[i], a[i-1]))
+                return false;
+        
+        return true;
+    }
+    
+    //See previous method.
+    private static boolean less(Comparable v, Comparable w) {
+        return v.compareTo(w) < 0;
+    }
+}
